@@ -4,28 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website with Login Form</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="nav-logo">FoundationVIP</a>
-            <ul class="nav-items">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">Produto</a>
-                    <a href="#" class="nav-link">Serviços</a>
-                    <a href="#" class="nav-link">Contato</a>
-                </li>
-            </ul>
-            <button class="button">Login</button>
+    <header>
+        <h2 class="logo">Sua Logo</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Produto</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+            <button class="btnLogin-popup">Login</button>
         </nav>
     </header>
 
-    <section class="home">
-        
+    <section class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Lembre-me</label>
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Não tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Cadastro</h2>
+            <form action="">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="username" required>
+                    <label>Nome</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Eu aceito os termos e condiçoes</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Já tem uma conta? <a href="#" class="login-link">Faça login</a></p>
+                </div>
+            </form>
+        </div>
     </section>
 
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
